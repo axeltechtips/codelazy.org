@@ -9,7 +9,7 @@
         body {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start; /* Changed alignment */
             justify-content: space-between;
             min-height: 100vh;
             margin: 0;
@@ -51,6 +51,13 @@
             color: #ffffff;
             text-decoration: none;
         }
+        .cloudflare-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 10px;
+            width: 100px;
+        }
     </style>
     <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,6 +80,7 @@
             <img class="fade-in stats-image" src="https://github-readme-stats.vercel.app/api/top-langs/?username=axeltechtips"></img>
         </div>
     </div>
+    <a href="https://www.cloudflare.com/" target="_blank"><img class="cloudflare-image" src="https://i.imgur.com/RNNJkg7.png" alt="Cloudflare"></a>
     <footer>Made by <a class="footer-link" href="http://xyqn.xyz/" target="_blank">xyqn</a>, 2023 codelazy.org | <a class="footer-link" href="http://blog.codelazy.org/" target="_blank">Visit My Blog</a></footer>
 </body>
 </html>
